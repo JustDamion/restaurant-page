@@ -1,8 +1,9 @@
+import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "node:path";
 
 export default {
     mode: "development",
-    entry: "./drc/index.js",
+    entry: "./src/index.js",
     output: {
         filename: "main.js",
         path: path.resolve(import.meta.dirname, "dist"),
@@ -18,9 +19,11 @@ export default {
         }),
     ],
     module: {
-        rules: {
-            test: /\.css$/i,
-            use: ["style-loader", "css-loader"],
-        },
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
     },
 };

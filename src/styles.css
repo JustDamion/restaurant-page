@@ -82,7 +82,10 @@ h6 {
 }
 
 .header__branding {
+    color: white;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .navbar {

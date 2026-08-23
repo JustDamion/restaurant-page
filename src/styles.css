@@ -104,6 +104,12 @@ h6 {
     border-radius: 4px;
 }
 
+.button--active {
+    background-color: #28323c;
+    color: white;
+    border: none;
+}
+
 .navbar__item:hover {
     color: white;
     background-color: #28323c;

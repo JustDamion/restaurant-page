@@ -1,0 +1,123 @@
+/* START CSS RESET */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*:not(dialog) {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* END CSS RESET */
+
+.body {
+    height: 100vh;
+    color: white;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+}
+
+.header__branding {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    gap: 24px;
+}
+
+.navbar__item {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 4px;
+}
+
+.navbar__item:hover {
+    color: white;
+    background-color: #28323c;
+}
+
+.hero {
+    height: 100%;
+    margin: 80px 80px 0 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero__title {
+    text-decoration: underline;
+}
+
+.hero__content {
+    padding: 32px 48px;
+    width: 800px;
+    background-color: #28323c;
+    border-radius: 8px;
+}

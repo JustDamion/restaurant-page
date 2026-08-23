@@ -158,3 +158,25 @@ h6 {
     border-bottom: 2px dotted white;
     flex: 1;
 }
+
+/* Contact Screen */
+.contact {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact__details,
+.contact__schedule {
+    background-color: #28323c;
+    padding: 32px 48px;
+    border-radius: 8px;
+    width: 500px;
+}
+
+.contact__details-title,
+.contact__schedule-title {
+    text-decoration: underline;
+}

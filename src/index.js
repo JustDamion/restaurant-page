@@ -1,6 +1,7 @@
 import "./styles.css";
 import Home from "./screens/home.js";
 import Menu from "./screens/menu.js";
+import Contact from "./screens/contact.js";
 
 const ScreenController = (() => {
     const contentDiv = document.querySelector("#content")
@@ -25,7 +26,13 @@ const ScreenController = (() => {
         Menu.render();
     }
 
+    const renderContactScreen = () => {
+        clearContent();
+        Contact.render();
+    }
+
     brandingButton.addEventListener("click", renderHomeScreen);
     homeButton.addEventListener("click", renderHomeScreen);
     menuButton.addEventListener("click", renderMenuScreen);
+    contactButton.addEventListener("click", renderContactScreen);
 })();

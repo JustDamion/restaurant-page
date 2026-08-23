@@ -1,72 +1,32 @@
+import Util from "../util.js";
+
 export default class Contact {
     static render() {
-        const contactDetailsTitle = document.createElement("h2");
-        contactDetailsTitle.setAttribute("class", "contact-details__title");
-        contactDetailsTitle.textContent = "Get in touch!";
+        const CONTACT_TITLE = "Get in touch!";
+        const CONTACT_EMAIL = "Email: thereservoirwater@notarealemail.com";
+        const CONTACT_PHONE = "Phone: (555)123-456";
 
-        const contactDetailsEmail = document.createElement("p");
-        contactDetailsEmail.setAttribute("class", "contact-details__email");
-        contactDetailsEmail.textContent = "Email: thereservoirwater@notarealemail.com";
+        const SCHEDULE_TITLE = "Come See Us!";
 
-        const contactDetailsPhone = document.createElement("p");
-        contactDetailsPhone.setAttribute("class", "contact-details__phone");
-        contactDetailsPhone.textContent = "Phone: (555)123-456";
+        const contactDetails = Util.createDomElement("div", "contact-details");
+        contactDetails.appendChild(Util.createDomElement("h2", "contact-details__title", CONTACT_TITLE));
+        contactDetails.appendChild(Util.createDomElement("p", "contact-details__email", CONTACT_EMAIL));
+        contactDetails.appendChild(Util.createDomElement("p", "contact-details__phone", CONTACT_PHONE));
 
-        const contactDetails = document.createElement("div");
-        contactDetails.setAttribute("class", "contact-details");
-        contactDetails.appendChild(contactDetailsTitle);
-        contactDetails.appendChild(contactDetailsEmail);
-        contactDetails.appendChild(contactDetailsPhone);
+        const contactScheduleList = Util.createDomElement("ul", "contact-schedule__list");
+        contactScheduleList.appendChild(Util.createDomElement("li", "schedule-item", "Monday: 2pm - 3pm"));
+        contactScheduleList.appendChild(Util.createDomElement("li", "schedule-item", "Tuesday: 2pm - 3pm"));
+        contactScheduleList.appendChild(Util.createDomElement("li", "schedule-item", "Wednesday: 2pm - 3pm"));
+        contactScheduleList.appendChild(Util.createDomElement("li", "schedule-item", "Thursday: 2pm - 3pm"));
+        contactScheduleList.appendChild(Util.createDomElement("li", "schedule-item", "Friday: 2pm - 4pm"));
+        contactScheduleList.appendChild(Util.createDomElement("li", "schedule-item", "Saturday: 8am - 11pm"));
+        contactScheduleList.appendChild(Util.createDomElement("li", "schedule-item", "Sunday: Closed"));
 
-        const contactScheduleTitle = document.createElement("h2");
-        contactScheduleTitle.setAttribute("class", "contact-schedule__title");
-        contactScheduleTitle.textContent = "Come See Us!";
-
-        const scheduleMonday = document.createElement("li");
-        scheduleMonday.setAttribute("class", "schedule-item");
-        scheduleMonday.textContent = "Monday: 2pm - 3pm";
-
-        const scheduleTuesday = document.createElement("li");
-        scheduleTuesday.setAttribute("class", "schedule-item");
-        scheduleTuesday.textContent = "Tuesday: 2pm - 3pm";
-
-        const scheduleWednesday = document.createElement("li");
-        scheduleWednesday.setAttribute("class", "schedule-item");
-        scheduleWednesday.textContent = "Wednesday: 2pm - 3pm";
-
-        const scheduleThursday = document.createElement("li");
-        scheduleThursday.setAttribute("class", "schedule-item");
-        scheduleThursday.textContent = "Thursday: 2pm - 3pm";
-
-        const scheduleFriday = document.createElement("li");
-        scheduleFriday.setAttribute("class", "schedule-item");
-        scheduleFriday.textContent = "Friday: 2pm - 4pm";
-
-        const scheduleSaturday = document.createElement("li");
-        scheduleSaturday.setAttribute("class", "schedule-item");
-        scheduleSaturday.textContent = "Saturday: 8am - 11pm";
-
-        const scheduleSunday = document.createElement("li");
-        scheduleSunday.setAttribute("class", "schedule-item");
-        scheduleSunday.textContent = "Closed";
-
-        const contactScheduleList = document.createElement("ul");
-        contactScheduleList.setAttribute("class", "contact-schedule__list");
-        contactScheduleList.appendChild(scheduleMonday);
-        contactScheduleList.appendChild(scheduleTuesday);
-        contactScheduleList.appendChild(scheduleWednesday);
-        contactScheduleList.appendChild(scheduleThursday);
-        contactScheduleList.appendChild(scheduleFriday);
-        contactScheduleList.appendChild(scheduleSaturday);
-        contactScheduleList.appendChild(scheduleSunday);
-
-        const contactSchedule = document.createElement("div");
-        contactSchedule.setAttribute("class", "contact-schedule");
-        contactSchedule.appendChild(contactScheduleTitle);
+        const contactSchedule = Util.createDomElement("div", "contact-schedule");
+        contactSchedule.appendChild(Util.createDomElement("h2", "contact-schedule__title", SCHEDULE_TITLE));
         contactSchedule.appendChild(contactScheduleList);
 
-        const contactDiv = document.createElement("div");
-        contactDiv.setAttribute("class", "contact");
+        const contactDiv = Util.createDomElement("div", "contact");
         contactDiv.appendChild(contactDetails);
         contactDiv.appendChild(contactSchedule);
 

@@ -20,6 +20,7 @@
   "homepage": "https://github.com/JustDamion/restaurant-page#readme",
   "devDependencies": {
     "css-loader": "^7.1.4",
+    "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.8",
     "style-loader": "^4.0.0",
     "webpack": "^5.109.2",

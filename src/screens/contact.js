@@ -3,8 +3,8 @@ import Util from "../util.js";
 export default class Contact {
     static render() {
         const CONTACT_TITLE = "Get in touch!";
-        const CONTACT_EMAIL = "Email: thereservoirwater@notarealemail.com";
-        const CONTACT_PHONE = "Phone: (555)123-456";
+        const CONTACT_EMAIL = "✉️ thereservoirwater@notarealemail.com";
+        const CONTACT_PHONE = "📞 (555)123-456";
 
         const SCHEDULE_TITLE = "Come See Us!";
 

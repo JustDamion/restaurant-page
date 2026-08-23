@@ -67,7 +67,7 @@ h6 {
 
 /* END CSS RESET */
 
-.body {
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 100vh;
     color: white;
@@ -104,7 +104,7 @@ h6 {
     border-radius: 4px;
 }
 
-.button--active {
+.navbar__item--active {
     background-color: #28323c;
     color: white;
     border: none;
@@ -180,15 +180,15 @@ h6 {
     gap: 24px;
 }
 
-.contact__details,
-.contact__schedule {
+.contact-details,
+.contact-schedule {
     background-color: #28323c;
     padding: 32px 48px;
     border-radius: 8px;
     width: 500px;
 }
 
-.contact__details-title,
-.contact__schedule-title {
+.contact-details__title,
+.contact-schedule__title {
     text-decoration: underline;
 }

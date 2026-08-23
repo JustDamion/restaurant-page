@@ -29,21 +29,21 @@ const ScreenController = (() => {
         clearContent();
         Home.render();
         resetButtonStyles();
-        homeButton.setAttribute("class", "navbar__item button--active");
+        homeButton.setAttribute("class", "navbar__item navbar__item--active");
     }
 
     const renderMenuScreen = () => {
         clearContent();
         Menu.render();
         resetButtonStyles();
-        menuButton.setAttribute("class", "navbar__item button--active");
+        menuButton.setAttribute("class", "navbar__item navbar__item--active");
     }
 
     const renderContactScreen = () => {
         clearContent();
         Contact.render();
         resetButtonStyles();
-        contactButton.setAttribute("class", "navbar__item button--active");
+        contactButton.setAttribute("class", "navbar__item navbar__item--active");
     }
 
     renderHomeScreen();

@@ -65,7 +65,7 @@ export default class Menu {
         menuItemDescription.textContent = description;
 
         const menuItem = document.createElement("li");
-        menuItem.setAttribute("class", "menu__item");
+        menuItem.setAttribute("class", "menu-item");
         menuItem.appendChild(menuItemDetails);
         menuItem.appendChild(menuItemDescription);
 

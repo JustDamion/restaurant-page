@@ -1,3 +1,11 @@
+:root {
+    --c-blue-1: #1D3557;
+    --c-blue-2: #457B9D;
+    --c-blue-3: #A8DADC;
+
+    --c-off-white-1: #F1FAEE;
+}
+
 /* START CSS RESET */
 
 *,
@@ -70,7 +78,7 @@ h6 {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 100vh;
-    color: white;
+    color: var(--c-off-white-1);
     background-image: url("./images/background.jpg");
     background-size: cover;
 }
@@ -84,7 +92,7 @@ body {
 
 .header__branding {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: var(--c-off-white-1);
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -92,27 +100,27 @@ body {
 
 .navbar {
     display: flex;
-    gap: 24px;
+    gap: 32px;
 }
 
 .navbar__item {
-    font-size: 1.1rem;
-    padding: 8px 16px;
+    font-size: 1.2rem;
+    padding: 8px 24px;
     cursor: pointer;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--c-off-white-1);
     border: none;
     border-radius: 4px;
 }
 
 .navbar__item--active {
-    background-color: #28323c;
-    color: white;
+    background-color: var(--c-blue-1);
+    color: var(--c-off-white-1);
     border: none;
 }
 
 .navbar__item:hover {
-    color: white;
-    background-color: #28323c;
+    color: var(--c-off-white-1);
+    background-color: var(--c-blue-2);
 }
 
 /* Home Screen */
@@ -130,7 +138,7 @@ body {
 .hero__content {
     padding: 32px 48px;
     width: 800px;
-    background-color: #28323c;
+    background-color: var(--c-blue-1);
     border-radius: 8px;
 }
 
@@ -144,8 +152,9 @@ body {
     width: 800px;
     margin-top: 64px;
     padding: 32px 48px;
-    background-color: #28323c;
-    border: 4px solid #f5f5f5;
+    background-color: var(--c-blue-1);
+    border: 4px solid var(--c-blue-2);
+    border-radius: 8px;
 }
 
 .menu__title {
@@ -163,7 +172,7 @@ body {
 .menu-item__dots {
     position: relative;
     bottom: 8px;
-    border-bottom: 2px dotted white;
+    border-bottom: 2px dotted var(--c-off-white-1);
     flex: 1;
 }
 
@@ -182,8 +191,9 @@ body {
 
 .contact-details,
 .contact-schedule {
-    background-color: #28323c;
+    background-color: var(--c-blue-1);
     padding: 32px 48px;
+    border: 4px solid var(--c-blue-2);
     border-radius: 8px;
     width: 500px;
 }

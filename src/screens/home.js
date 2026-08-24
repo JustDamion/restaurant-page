@@ -7,7 +7,7 @@ export default class Home {
 
         const HERO_DESCRIPTION = `From the time he was a child, our head chef had always despised the taste of boring water. 
         "How could anyone drink this?" he would ask. Finally after years of grit, he stumbled onto a solution. 
-        A formulated secret recipe that does what no water has done before, taste extravagant while hydrating more than anyone could ever think was possible. 
+        A formulated secret recipe that does what no water has done before, taste extravagant while hydrating more than anyone would ever think was possible. 
         Why settle for the same boring standard water?`;
 
         const heroContentDiv = Util.createDomElement("div", "hero__content");
